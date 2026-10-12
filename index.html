@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kinshu Kumawat — Frontend &amp; React.js Developer</title>
+  <meta name="author" content="Kinshu Kumawat" />
+  <meta name="description" content="Portfolio of Kinshu Kumawat: modern, responsive, interactive web experiences built with React.js, JavaScript, HTML and CSS." />
+  <meta property="og:title" content="Kinshu Kumawat — Frontend &amp; React.js Developer" />
+  <meta property="og:description" content="Portfolio of Kinshu Kumawat: modern, responsive, interactive web experiences built with React.js, JavaScript, HTML and CSS." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kinshu Kumawat — Frontend &amp; React.js Developer" />
+  <meta name="twitter:description" content="Portfolio of Kinshu Kumawat: modern, responsive, interactive web experiences built with React.js, JavaScript, HTML and CSS." />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;family=Sora:wght@600;700;800&amp;display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-background text-foreground antialiased selection:bg-accent selection:text-accent-foreground">
+
+  <!-- Custom Cursor -->
+  <div aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="fixed inset-x-0 top-0 z-50 transition-all">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+      <a href="#home" class="font-display text-lg font-bold">
+        <span class="text-gradient">Kinshu</span> Kumawat
+      </a>
+      <ul class="hidden items-center gap-4 lg:gap-7 md:flex">
+        <li><a href="#home" class="text-sm text-muted-foreground transition-colors hover:text-foreground">Home</a></li>
+        <li><a href="#about" class="text-sm text-muted-foreground transition-colors hover:text-foreground">About</a></li>
+        <li><a href="#experience" class="text-sm text-muted-foreground transition-colors hover:text-foreground">Experience</a></li>
+        <li><a href="#projects" class="text-sm text-muted-foreground transition-colors hover:text-foreground">Projects</a></li>
+        <li><a href="#skills" class="text-sm text-muted-foreground transition-colors hover:text-foreground">Skills</a></li>
+        <li><a href="#certificates" class="text-sm text-muted-foreground transition-colors hover:text-foreground">Certificates</a></li>
+        <li><a href="#contact" class="text-sm text-muted-foreground transition-colors hover:text-foreground">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn-primary hidden !py-2 text-sm lg:inline-flex">Let's Connect</a>
+      <button id="mobile-menu-btn" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring hover:bg-accent hover:text-accent-foreground h-9 w-9 md:hidden" aria-label="Open menu" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
+      </button>
+    </nav>
+    <ul id="mobile-menu" class="hidden flex-col gap-1 px-5 pb-5 md:hidden">
+      <li><a href="#home" class="block rounded-lg px-3 py-2 text-muted-foreground hover:bg-muted hover:text-foreground">Home</a></li>
+      <li><a href="#about" class="block rounded-lg px-3 py-2 text-muted-foreground hover:bg-muted hover:text-foreground">About</a></li>
+      <li><a href="#experience" class="block rounded-lg px-3 py-2 text-muted-foreground hover:bg-muted hover:text-foreground">Experience</a></li>
+      <li><a href="#projects" class="block rounded-lg px-3 py-2 text-muted-foreground hover:bg-muted hover:text-foreground">Projects</a></li>
+      <li><a href="#skills" class="block rounded-lg px-3 py-2 text-muted-foreground hover:bg-muted hover:text-foreground">Skills</a></li>
+      <li><a href="#certificates" class="block rounded-lg px-3 py-2 text-muted-foreground hover:bg-muted hover:text-foreground">Certificates</a></li>
+      <li><a href="#contact" class="block rounded-lg px-3 py-2 text-muted-foreground hover:bg-muted hover:text-foreground">Contact</a></li>
+      <li class="mt-2"><a href="#contact" class="btn-primary text-center">Let's Connect</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="mx-auto grid min-h-screen max-w-6xl items-center gap-12 px-5 pt-28 pb-16 md:grid-cols-[1.2fr_1fr]">
+      <div class="reveal">
+        <p class="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 font-mono text-xs text-muted-foreground">
+          <span class="h-2 w-2 rounded-full bg-accent"></span> Open to opportunities
+        </p>
+        <h1 class="mt-6 text-4xl font-extrabold leading-tight sm:text-6xl">
+          Hi, I'm <span class="text-gradient">Kinshu Kumawat</span>
+        </h1>
+        <p class="mt-4 font-mono text-sm text-accent sm:text-base">
+          Frontend Developer | React.js Developer | Web Developer
+        </p>
+        <p class="mt-5 max-w-xl text-lg text-muted-foreground">
+          I build modern, responsive, and interactive web experiences using clean code and creative design.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="Kinshu_Kumawat_Resume.pdf" download="Kinshu_Kumawat_Resume.pdf" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring bg-primary text-primary-foreground shadow hover:bg-primary/90 px-4 py-2 btn-primary h-auto">
+            Download Resume
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg>
+          </a>
+          <a href="#contact" class="btn-ghost">Contact Me</a>
+        </div>
+        <div class="mt-8">
+          <div class="flex gap-3">
+            <a href="https://github.com/kinshu-kumawat" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" class="glass grid h-11 w-11 place-items-center rounded-full transition hover:-translate-y-0.5 hover:text-accent">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/kinshu-kumawat-26b8b3384/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" class="glass grid h-11 w-11 place-items-center rounded-full transition hover:-translate-y-0.5 hover:text-accent">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2ZM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2ZM7.1 20.5H3.5V9h3.6v11.5ZM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0Z"></path></svg>
+            </a>
+            <a href="mailto:kinshukumawat02@gmail.com" aria-label="Send email" class="glass grid h-11 w-11 place-items-center rounded-full transition hover:-translate-y-0.5 hover:text-accent">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="reveal relative hidden md:block">
+        <div class="bg-gradient-brand absolute inset-8 rounded-full opacity-40 blur-3xl"></div>
+        <div class="glass animate-float relative rounded-2xl p-6 font-mono text-sm shadow-glow">
+          <div class="mb-4 flex gap-1.5">
+            <span class="h-3 w-3 rounded-full bg-destructive"></span>
+            <span class="h-3 w-3 rounded-full bg-primary"></span>
+            <span class="h-3 w-3 rounded-full bg-accent"></span>
+          </div>
+          <pre class="whitespace-pre-wrap leading-7 text-muted-foreground"><span class="text-primary">const</span> <span class="text-accent">developer</span> = {
+  name: <span class="text-foreground">&quot;Kinshu Kumawat&quot;</span>,
+  role: <span class="text-foreground">&quot;Frontend Developer&quot;</span>,
+  stack: [<span class="text-foreground">&quot;React&quot;</span>, <span class="text-foreground">&quot;JS&quot;</span>, <span class="text-foreground">&quot;CSS&quot;</span>],
+  loves: <span class="text-foreground">&quot;clean UI&quot;</span>,
+};</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="mx-auto max-w-4xl px-5 py-24">
+      <div class="reveal">
+        <div class="mb-12 text-center">
+          <h2 class="mt-2 text-3xl font-bold sm:text-4xl">Who I Am</h2>
+        </div>
+        <div class="glass rounded-2xl p-8 text-center sm:p-10">
+          <p class="text-lg leading-relaxed text-muted-foreground">
+            I'm Kinshu Kumawat, a passionate web developer interested in creating responsive, user-friendly, and visually appealing web experiences. I enjoy learning modern web technologies, improving my coding skills, and turning ideas into functional projects. I aim to build clean, accessible, and engaging digital experiences.
+          </p>
+          <div class="mt-8 flex flex-wrap justify-center gap-3">
+            <span class="rounded-full border border-input bg-muted px-4 py-1.5 text-sm">Frontend Development</span>
+            <span class="rounded-full border border-input bg-muted px-4 py-1.5 text-sm">React.js</span>
+            <span class="rounded-full border border-input bg-muted px-4 py-1.5 text-sm">HTML &amp; CSS</span>
+            <span class="rounded-full border border-input bg-muted px-4 py-1.5 text-sm">JavaScript</span>
+            <span class="rounded-full border border-input bg-muted px-4 py-1.5 text-sm">Responsive Web Design</span>
+            <span class="rounded-full border border-input bg-muted px-4 py-1.5 text-sm">UI Development</span>
+          </div>
+        </div>
+        <div class="mt-12 border-t border-border pt-10">
+          <div class="mb-6 flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap text-accent"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg>
+            <h3 class="text-2xl font-bold">Education</h3>
+          </div>
+          <div class="border-l-2 border-accent pl-6">
+            <p class="mb-2 font-mono text-sm text-accent">2023 – 2026</p>
+            <h4 class="text-lg font-semibold">Bachelor of Computer Applications (BCA)</h4>
+            <p class="mt-2 text-muted-foreground">University of Rajasthan</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="mx-auto max-w-4xl px-5 py-24">
+      <div class="reveal">
+        <div class="mb-12 text-center">
+          <h2 class="mt-2 text-3xl font-bold sm:text-4xl">Experience &amp; Training</h2>
+        </div>
+        <div class="space-y-10 border-l border-input pl-6 sm:pl-10">
+          <article class="relative">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase-business mb-4 text-accent"><path d="M12 12h.01"></path><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path><path d="M22 13a18.15 18.15 0 0 1-20 0"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg>
+            <p class="mb-2 text-sm text-accent">Training</p>
+            <h3 class="text-xl font-bold sm:text-2xl">MERN Stack</h3>
+            <p class="mt-2 text-muted-foreground">Shreyans Coding School</p>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="rounded-md bg-muted px-3 py-1.5 text-sm text-muted-foreground">MongoDB</span>
+              <span class="rounded-md bg-muted px-3 py-1.5 text-sm text-muted-foreground">Express.js</span>
+              <span class="rounded-md bg-muted px-3 py-1.5 text-sm text-muted-foreground">React.js</span>
+              <span class="rounded-md bg-muted px-3 py-1.5 text-sm text-muted-foreground">Node.js</span>
+            </div>
+          </article>
+          <article class="relative">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase-business mb-4 text-accent"><path d="M12 12h.01"></path><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path><path d="M22 13a18.15 18.15 0 0 1-20 0"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg>
+            <p class="mb-2 text-sm text-accent">Training</p>
+            <h3 class="text-xl font-bold sm:text-2xl">Full Stack Java Developer with AI</h3>
+            <p class="mt-2 text-muted-foreground">AU Ignite Future Skills Academy</p>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="rounded-md bg-muted px-3 py-1.5 text-sm text-muted-foreground">Frontend</span>
+              <span class="rounded-md bg-muted px-3 py-1.5 text-sm text-muted-foreground">Java</span>
+              <span class="rounded-md bg-muted px-3 py-1.5 text-sm text-muted-foreground">Databases</span>
+              <span class="rounded-md bg-muted px-3 py-1.5 text-sm text-muted-foreground">AI Concepts</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="mx-auto max-w-6xl px-5 py-24">
+      <div class="reveal">
+        <div class="mb-12 text-center">
+          <h2 class="mt-2 text-3xl font-bold sm:text-4xl">Featured Projects</h2>
+        </div>
+        <div class="grid gap-6 md:grid-cols-2">
+          <!-- Project 1 -->
+          <article class="glass group relative overflow-hidden rounded-2xl transition hover:-translate-y-1 hover:shadow-glow">
+            <a href="https://sayy-project-clone.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Open SAYY Website Clone live" class="absolute inset-0 z-10"></a>
+            <div class="relative grid aspect-[16/9] place-items-center overflow-hidden" style="background:radial-gradient(circle at 30% 20%, oklch(0.6 0.2 290), oklch(0.2 0.06 320))">
+              <div class="glass w-3/4 rounded-xl p-3 transition group-hover:scale-105">
+                <div class="mb-2 flex gap-1">
+                  <span class="h-2 w-2 rounded-full bg-foreground/50"></span>
+                  <span class="h-2 w-2 rounded-full bg-foreground/50"></span>
+                  <span class="h-2 w-2 rounded-full bg-foreground/50"></span>
+                </div>
+                <p class="font-display text-lg font-bold sm:text-2xl">SAYY Website Clone</p>
+                <div class="mt-3 h-2 w-2/3 rounded bg-foreground/20"></div>
+                <div class="mt-2 h-2 w-1/2 rounded bg-foreground/20"></div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold">SAYY Website Clone</h3>
+              <p class="mt-2 text-muted-foreground">A website clone project focused on recreating a modern website experience with responsive layouts and interactive frontend elements.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-md bg-muted px-2.5 py-1 font-mono text-xs text-accent">React.js</span>
+                <span class="rounded-md bg-muted px-2.5 py-1 font-mono text-xs text-accent">HTML</span>
+                <span class="rounded-md bg-muted px-2.5 py-1 font-mono text-xs text-accent">CSS</span>
+                <span class="rounded-md bg-muted px-2.5 py-1 font-mono text-xs text-accent">JavaScript</span>
+              </div>
+              <div class="relative z-20 mt-6 flex flex-wrap items-center gap-3">
+                <a href="https://sayy-project-clone.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-primary !py-2 text-sm">
+                  Live Demo
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                </a>
+                <span class="text-sm text-muted-foreground transition group-hover:text-accent">View Live Project &rarr;</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="glass group relative overflow-hidden rounded-2xl transition hover:-translate-y-1 hover:shadow-glow">
+            <a href="https://kinshu-atm-machine.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Open ATM Machine Application live" class="absolute inset-0 z-10"></a>
+            <div class="relative grid aspect-[16/9] place-items-center overflow-hidden" style="background:radial-gradient(circle at 30% 20%, oklch(0.6 0.2 200), oklch(0.2 0.06 230))">
+              <div class="glass w-3/4 rounded-xl p-3 transition group-hover:scale-105">
+                <div class="mb-2 flex gap-1">
+                  <span class="h-2 w-2 rounded-full bg-foreground/50"></span>
+                  <span class="h-2 w-2 rounded-full bg-foreground/50"></span>
+                  <span class="h-2 w-2 rounded-full bg-foreground/50"></span>
+                </div>
+                <p class="font-display text-lg font-bold sm:text-2xl">ATM Machine Application</p>
+                <div class="mt-3 h-2 w-2/3 rounded bg-foreground/20"></div>
+                <div class="mt-2 h-2 w-1/2 rounded bg-foreground/20"></div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold">ATM Machine Application</h3>
+              <p class="mt-2 text-muted-foreground">An interactive ATM machine project that demonstrates banking-style user interactions and transaction-related functionality.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-md bg-muted px-2.5 py-1 font-mono text-xs text-accent">HTML</span>
+                <span class="rounded-md bg-muted px-2.5 py-1 font-mono text-xs text-accent">CSS</span>
+                <span class="rounded-md bg-muted px-2.5 py-1 font-mono text-xs text-accent">JavaScript</span>
+              </div>
+              <div class="relative z-20 mt-6 flex flex-wrap items-center gap-3">
+                <a href="https://kinshu-atm-machine.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-primary !py-2 text-sm">
+                  Live Demo
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                </a>
+                <span class="text-sm text-muted-foreground transition group-hover:text-accent">View Live Project &rarr;</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="glass group relative overflow-hidden rounded-2xl transition hover:-translate-y-1 hover:shadow-glow">
+            <a href="https://navis-project.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Navis Landing Page live" class="absolute inset-0 z-10"></a>
+            <div class="relative grid aspect-[16/9] place-items-center overflow-hidden" style="background:radial-gradient(circle at 30% 20%, oklch(0.6 0.2 250), oklch(0.2 0.06 280))">
+              <div class="glass w-3/4 rounded-xl p-3 transition group-hover:scale-105">
+                <div class="mb-2 flex gap-1">
+                  <span class="h-2 w-2 rounded-full bg-foreground/50"></span>
+                  <span class="h-2 w-2 rounded-full bg-foreground/50"></span>
+                  <span class="h-2 w-2 rounded-full bg-foreground/50"></span>
+                </div>
+                <p class="font-display text-lg font-bold sm:text-2xl">Navis Landing Page</p>
+                <div class="mt-3 h-2 w-2/3 rounded bg-foreground/20"></div>
+                <div class="mt-2 h-2 w-1/2 rounded bg-foreground/20"></div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold">Navis Landing Page</h3>
+              <p class="mt-2 text-muted-foreground">A modern landing page project focused on attractive layouts, visual presentation, and responsive frontend design.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-md bg-muted px-2.5 py-1 font-mono text-xs text-accent">HTML</span>
+                <span class="rounded-md bg-muted px-2.5 py-1 font-mono text-xs text-accent">CSS</span>
+                <span class="rounded-md bg-muted px-2.5 py-1 font-mono text-xs text-accent">JavaScript</span>
+              </div>
+              <div class="relative z-20 mt-6 flex flex-wrap items-center gap-3">
+                <a href="https://navis-project.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-primary !py-2 text-sm">
+                  Live Demo
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                </a>
+                <span class="text-sm text-muted-foreground transition group-hover:text-accent">View Live Project &rarr;</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="glass group relative overflow-hidden rounded-2xl transition hover:-translate-y-1 hover:shadow-glow">
+            <a href="https://frabjous-projectappl-sherbet-0432f8.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Apple Website Project live" class="absolute inset-0 z-10"></a>
+            <div class="relative grid aspect-[16/9] place-items-center overflow-hidden" style="background:radial-gradient(circle at 30% 20%, oklch(0.6 0.2 320), oklch(0.2 0.06 350))">
+              <div class="glass w-3/4 rounded-xl p-3 transition group-hover:scale-105">
+                <div class="mb-2 flex gap-1">
+                  <span class="h-2 w-2 rounded-full bg-foreground/50"></span>
+                  <span class="h-2 w-2 rounded-full bg-foreground/50"></span>
+                  <span class="h-2 w-2 rounded-full bg-foreground/50"></span>
+                </div>
+                <p class="font-display text-lg font-bold sm:text-2xl">Apple Website Project</p>
+                <div class="mt-3 h-2 w-2/3 rounded bg-foreground/20"></div>
+                <div class="mt-2 h-2 w-1/2 rounded bg-foreground/20"></div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold">Apple Website Project</h3>
+              <p class="mt-2 text-muted-foreground">An Apple-inspired frontend project focused on clean layouts, product presentation, and modern website styling.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-md bg-muted px-2.5 py-1 font-mono text-xs text-accent">HTML</span>
+                <span class="rounded-md bg-muted px-2.5 py-1 font-mono text-xs text-accent">CSS</span>
+                <span class="rounded-md bg-muted px-2.5 py-1 font-mono text-xs text-accent">JavaScript</span>
+              </div>
+              <div class="relative z-20 mt-6 flex flex-wrap items-center gap-3">
+                <a href="https://frabjous-projectappl-sherbet-0432f8.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-primary !py-2 text-sm">
+                  Live Demo
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                </a>
+                <span class="text-sm text-muted-foreground transition group-hover:text-accent">View Live Project &rarr;</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="mx-auto max-w-5xl px-5 py-24">
+      <div class="reveal">
+        <div class="mb-12 text-center">
+          <h2 class="mt-2 text-3xl font-bold sm:text-4xl">Skills &amp; Technologies</h2>
+        </div>
+        <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
+          <!-- HTML5 -->
+          <div class="glass group flex flex-col items-center gap-3 rounded-2xl p-6 text-center transition hover:-translate-y-1 hover:border-accent">
+            <span class="grid h-12 w-12 place-items-center rounded-xl bg-muted text-accent transition group-hover:text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg>
+            </span>
+            <span class="text-sm font-semibold">HTML5</span>
+          </div>
+
+          <!-- CSS3 -->
+          <div class="glass group flex flex-col items-center gap-3 rounded-2xl p-6 text-center transition hover:-translate-y-1 hover:border-accent">
+            <span class="grid h-12 w-12 place-items-center rounded-xl bg-muted text-accent transition group-hover:text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"></path><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle></svg>
+            </span>
+            <span class="text-sm font-semibold">CSS3</span>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="glass group flex flex-col items-center gap-3 rounded-2xl p-6 text-center transition hover:-translate-y-1 hover:border-accent">
+            <span class="grid h-12 w-12 place-items-center rounded-xl bg-muted text-accent transition group-hover:text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-braces"><path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5c0 1.1.9 2 2 2h1"></path><path d="M16 21h1a2 2 0 0 0 2-2v-5c0-1.1.9-2 2-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1"></path></svg>
+            </span>
+            <span class="text-sm font-semibold">JavaScript</span>
+          </div>
+
+          <!-- React.js -->
+          <div class="glass group flex flex-col items-center gap-3 rounded-2xl p-6 text-center transition hover:-translate-y-1 hover:border-accent">
+            <span class="grid h-12 w-12 place-items-center rounded-xl bg-muted text-accent transition group-hover:text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-atom"><circle cx="12" cy="12" r="1"></circle><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"></path><path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z"></path></svg>
+            </span>
+            <span class="text-sm font-semibold">React.js</span>
+          </div>
+
+          <!-- Responsive Web Design -->
+          <div class="glass group flex flex-col items-center gap-3 rounded-2xl p-6 text-center transition hover:-translate-y-1 hover:border-accent">
+            <span class="grid h-12 w-12 place-items-center rounded-xl bg-muted text-accent transition group-hover:text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smartphone"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect><path d="M12 18h.01"></path></svg>
+            </span>
+            <span class="text-sm font-semibold">Responsive Web Design</span>
+          </div>
+
+          <!-- Git -->
+          <div class="glass group flex flex-col items-center gap-3 rounded-2xl p-6 text-center transition hover:-translate-y-1 hover:border-accent">
+            <span class="grid h-12 w-12 place-items-center rounded-xl bg-muted text-accent transition group-hover:text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-git-branch"><path d="M15 6a9 9 0 0 0-9 9V3"></path><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle></svg>
+            </span>
+            <span class="text-sm font-semibold">Git</span>
+          </div>
+
+          <!-- GitHub -->
+          <div class="glass group flex flex-col items-center gap-3 rounded-2xl p-6 text-center transition hover:-translate-y-1 hover:border-accent">
+            <span class="grid h-12 w-12 place-items-center rounded-xl bg-muted text-accent transition group-hover:text-primary">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"></path></svg>
+            </span>
+            <span class="text-sm font-semibold">GitHub</span>
+          </div>
+
+          <!-- Vite -->
+          <div class="glass group flex flex-col items-center gap-3 rounded-2xl p-6 text-center transition hover:-translate-y-1 hover:border-accent">
+            <span class="grid h-12 w-12 place-items-center rounded-xl bg-muted text-accent transition group-hover:text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+            </span>
+            <span class="text-sm font-semibold">Vite</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="mx-auto max-w-5xl px-5 py-24">
+      <div class="reveal">
+        <div class="mb-12 text-center">
+          <h2 class="mt-2 text-3xl font-bold sm:text-4xl">Certificates</h2>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-2">
+          <!-- Certificate 1 -->
+          <article class="glass overflow-hidden rounded-lg">
+            <div class="flex aspect-[4/3] flex-col items-center justify-center gap-4 bg-muted/50 text-muted-foreground">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award text-accent"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg>
+              <span class="text-sm">Certificate image coming soon</span>
+            </div>
+            <div class="p-6">
+              <p class="mb-2 font-mono text-sm text-accent">2026</p>
+              <h3 class="text-xl font-bold">Full Stack Java with AI</h3>
+              <p class="mt-2 text-muted-foreground">AU Ignite Future Skills Academy</p>
+            </div>
+          </article>
+
+          <!-- Certificate 2 -->
+          <article class="glass overflow-hidden rounded-lg">
+            <div class="flex aspect-[4/3] flex-col items-center justify-center gap-4 bg-muted/50 text-muted-foreground">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award text-accent"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg>
+              <span class="text-sm">Certificate image coming soon</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold">MERN Stack</h3>
+              <p class="mt-2 text-muted-foreground">Shreyans Coding School</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="mx-auto max-w-6xl px-5 py-24">
+      <div class="reveal">
+        <div class="mb-12 text-center">
+          <h2 class="mt-2 text-3xl font-bold sm:text-4xl">Let's Build Something Together</h2>
+        </div>
+        <p class="-mt-8 mb-12 text-center text-muted-foreground">
+          Have an opportunity, project idea, or collaboration in mind? Feel free to reach out.
+        </p>
+        <div class="grid gap-8 md:grid-cols-[1fr_1.3fr]">
+          <!-- Contact Info Cards -->
+          <div class="flex flex-col gap-4">
+            <a href="mailto:kinshukumawat02@gmail.com" class="glass flex items-center gap-4 rounded-xl p-4 transition hover:border-accent">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail shrink-0 text-accent"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+              <span class="min-w-0 break-all">kinshukumawat02@gmail.com</span>
+            </a>
+            <a href="tel:8003537013" class="glass flex items-center gap-4 rounded-xl p-4 transition hover:border-accent">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone shrink-0 text-accent"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+              <span>8003537013</span>
+            </a>
+            <a href="https://github.com/kinshu-kumawat" target="_blank" rel="noopener noreferrer" class="glass flex items-center gap-4 rounded-xl p-4 transition hover:border-accent">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true" class="shrink-0 text-accent"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"></path></svg>
+              <span>github.com/kinshu-kumawat</span>
+            </a>
+            <a href="https://www.linkedin.com/in/kinshu-kumawat-26b8b3384/" target="_blank" rel="noopener noreferrer" class="glass flex items-center gap-4 rounded-xl p-4 transition hover:border-accent">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true" class="shrink-0 text-accent"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2ZM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2ZM7.1 20.5H3.5V9h3.6v11.5ZM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0Z"></path></svg>
+              <span>in/kinshu-kumawat</span>
+            </a>
+          </div>
+
+          <!-- Contact Form -->
+          <form id="contact-form" class="glass grid gap-4 rounded-2xl p-6 sm:grid-cols-2">
+            <label class="grid gap-1.5 text-sm">
+              Full Name
+              <input required name="name" class="w-full rounded-xl border border-input bg-muted px-4 py-3 outline-none transition focus:border-accent" placeholder="Your Name" />
+            </label>
+            <label class="grid gap-1.5 text-sm">
+              Email Address
+              <input required type="email" name="email" class="w-full rounded-xl border border-input bg-muted px-4 py-3 outline-none transition focus:border-accent" placeholder="you@example.com" />
+            </label>
+            <label class="grid gap-1.5 text-sm sm:col-span-2">
+              Subject
+              <input required name="subject" class="w-full rounded-xl border border-input bg-muted px-4 py-3 outline-none transition focus:border-accent" placeholder="Project Inquiry / Collaboration" />
+            </label>
+            <label class="grid gap-1.5 text-sm sm:col-span-2">
+              Message
+              <textarea required name="message" rows="5" class="w-full rounded-xl border border-input bg-muted px-4 py-3 outline-none transition focus:border-accent" placeholder="Tell me about your project..."></textarea>
+            </label>
+            <div class="sm:col-span-2">
+              <button type="submit" id="submit-btn" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring bg-primary text-primary-foreground shadow hover:bg-primary/90 px-4 py-2 btn-primary h-auto">
+                <span id="btn-text">Send Message</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg>
+              </button>
+              <p class="mt-3 text-xs text-muted-foreground">Your message is delivered straight to my inbox.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-border px-5 py-10">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 sm:flex-row">
+      <div class="text-center sm:text-left">
+        <p class="font-display font-bold"><span class="text-gradient">Kinshu</span> Kumawat</p>
+        <p class="text-sm text-muted-foreground">Designed and built with passion.</p>
+      </div>
+      <div class="flex gap-3">
+        <a href="https://github.com/kinshu-kumawat" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" class="glass grid h-11 w-11 place-items-center rounded-full transition hover:-translate-y-0.5 hover:text-accent">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"></path></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/kinshu-kumawat-26b8b3384/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" class="glass grid h-11 w-11 place-items-center rounded-full transition hover:-translate-y-0.5 hover:text-accent">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2ZM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2ZM7.1 20.5H3.5V9h3.6v11.5ZM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0Z"></path></svg>
+        </a>
+        <a href="mailto:kinshukumawat02@gmail.com" aria-label="Send email" class="glass grid h-11 w-11 place-items-center rounded-full transition hover:-translate-y-0.5 hover:text-accent">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+        </a>
+      </div>
+      <p class="text-sm text-muted-foreground">&copy; <span id="current-year"></span> Kinshu Kumawat</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#home" id="back-to-top" aria-label="Back to top" class="btn-primary fixed bottom-6 right-6 z-40 !p-3 transition pointer-events-none opacity-0">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up"><path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path></svg>
+  </a>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
